@@ -16,12 +16,26 @@ console.log("Hello World!");
 // * 1. INPUT DATI
 // Richiesta del nome dell'utente
 let userName = prompt("Ciao! Scrivi il tuo NOME"); // string
-console.log(userName, "is:",typeof userName);
+console.log(userName, typeof userName);
 
 // Richiesta del cognome dell'utente
 let userSurname = prompt("Ora scrivi il tuo COGNOME"); // string
-console.log(userSurname, "is:",typeof userSurname);
+console.log(userSurname, typeof userSurname);
 
 // Richiesta del colore preferito dell'utente
 let userFavColor = prompt("Qual è il tuo colore preferito?"); // string
-console.log(userFavColor, "is:",typeof userFavColor);
+console.log(userFavColor, typeof userFavColor);
+
+
+// * 2. LOGICA
+// Generazione di un numero casuale tra 0 e 99
+const randomNumber = Math.floor(Math.random() * 100); // number
+console.log(randomNumber, typeof randomNumber);
+
+
+// * 3. OUTPUT
+// Preparo il messaggio
+const resultMessage = `La tua nuova password è: ${userName}${userSurname}${userFavColor}${randomNumber}` // string
+console.log(resultMessage, typeof resultMessage);
+// Stampo il messaggio in pagina
+document.getElementById("message").innerHTML = resultMessage;
