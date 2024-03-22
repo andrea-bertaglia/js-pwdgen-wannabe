@@ -31,11 +31,13 @@ console.log(userFavColor, typeof userFavColor);
 // Generazione di un numero casuale tra 0 e 99
 const randomNumber = Math.floor(Math.random() * 100); // number
 console.log(randomNumber, typeof randomNumber);
-
+// Genero la nuova password
+const newPwd = `${userName}${userSurname}${userFavColor}${randomNumber}`.toLowerCase() // string
+console.log(newPwd, typeof newPwd);
 
 // * 3. OUTPUT
 // Preparo il messaggio
-const resultMessage = `La tua nuova password è: ${userName}${userSurname}${userFavColor}${randomNumber}`.toLowerCase() // string
+const resultMessage = `La tua nuova password è: ${newPwd}` // string
 console.log(resultMessage, typeof resultMessage);
 // Stampo il messaggio in pagina
 document.getElementById("message").innerHTML = resultMessage;
