@@ -35,7 +35,7 @@ console.log(randomNumber, typeof randomNumber);
 
 // * 3. OUTPUT
 // Preparo il messaggio
-const resultMessage = `La tua nuova password è: ${userName}${userSurname}${userFavColor}${randomNumber}` // string
+const resultMessage = `La tua nuova password è: ${userName}${userSurname}${userFavColor}${randomNumber}`.toLowerCase() // string
 console.log(resultMessage, typeof resultMessage);
 // Stampo il messaggio in pagina
 document.getElementById("message").innerHTML = resultMessage;
